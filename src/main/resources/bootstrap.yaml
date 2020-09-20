@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+  application:
+    name: block-chain-app
+  profiles:
+    active: prod,qa
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+server:
+  port: 8082
+
+
+
